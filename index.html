@@ -41,12 +41,37 @@
         padding: 15px 30px;     /* Touch-friendly size */
       }
     }
+
+    .donate-button {
+  display: inline-block;
+  background-color: #ff69b4; /* bright pink for visibility */
+  color: white;
+  padding: 14px 24px;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 15px;
+  max-width: 90%;
+  transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+  background-color: #e055a1;
+}
+
+@media (max-width: 480px) {
+  .donate-button {
+    font-size: 1.5em;
+    padding: 16px 28px;
+  }
+}
   </style>
 </head>
 <body>
   <h1>🎉 Happy Birthday, Pianinou! 🎉</h1>
-<a href="https://www.kisa.ge/donate/pianinou" target="_blank" style="display: block; margin-top: 10px; font-size: 1.2em; text-decoration: none; color: #007acc;">
-  აჩუქე ხურდა &lt;3
+<a href="https://www.kisa.ge/donate/pianinou" target="_blank" class="donate-button">
+  აჩუქე ხურდა <3
 </a>
   <img src="pianinou.jpg" alt="Birthday Photo">
   <h2>მუსიკის ჩასართველად დააჭირე დაკვრას 🎶</h2>
