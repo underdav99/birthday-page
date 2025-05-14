@@ -8,18 +8,36 @@
       text-align: center;
       font-family: Arial, sans-serif;
       background-color: #fdf6e3;
+      margin: 0;
+      padding: 0 10px;
     }
 
     img {
-      max-width: 80%;
+      width: 100%;
+      max-width: 400px;
       height: auto;
       margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     button {
       font-size: 1.2em;
       padding: 10px 20px;
       cursor: pointer;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 480px) {
+      img {
+        max-width: 90%;
+      }
+
+      button {
+        font-size: 1em;
+        padding: 8px 16px;
+      }
     }
   </style>
 </head>
@@ -27,11 +45,11 @@
   <h1>🎉 Happy Birthday, Pianinou! 🎉</h1>
   <img src="pianinou.jpg" alt="Birthday Photo">
   <h2>Click below to start the birthday music 🎶</h2>
-<button onclick="document.getElementById('bdayAudio').play()">▶ Play</button>
+  <button onclick="document.getElementById('bdayAudio').play()">▶ Play</button>
 
-<audio id="bdayAudio" loop>
-  <source src="happy-birthday-334876.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+  <audio id="bdayAudio" loop>
+    <source src="happy-birthday-334876.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 </body>
 </html>
